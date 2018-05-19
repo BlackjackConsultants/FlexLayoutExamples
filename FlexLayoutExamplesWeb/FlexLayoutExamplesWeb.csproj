@@ -101,6 +101,7 @@
     <Content Include="src\app\router-named-outlet.component.html" />
     <Content Include="src\app\side-nav.component.css" />
     <Content Include="src\app\side-nav.component.html" />
+    <Content Include="src\assets\img\examples\flashcards.svg" />
     <Content Include="src\favicon.ico" />
     <Content Include="src\index.html" />
     <Content Include="src\styles.css" />

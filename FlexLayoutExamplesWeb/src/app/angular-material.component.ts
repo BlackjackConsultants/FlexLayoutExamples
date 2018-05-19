@@ -1,4 +1,6 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { MatIconRegistry } from '@angular/material';
+import { DomSanitizer } from '@angular/platform-browser';
 
 /**
  * @title Basic select
@@ -19,4 +21,9 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
     var atest = this.foods;
     console.debug(atest.length);
   }
+
+  constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
+    iconRegistry.addSvgIcon('thumbs-up', sanitizer.bypassSecurityTrustResourceUrl('assets/img/examples/flashcards.svg'));
+  }
+
 }

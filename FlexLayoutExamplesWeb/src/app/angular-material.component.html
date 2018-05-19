@@ -1,6 +1,12 @@
 <div>
   <ul>
     <li>
+      <span>Named Icons</span>
+      <mat-icon>menu</mat-icon>
+      <span>Svg Icons</span>
+      <mat-icon svgIcon="thumbs-up"></mat-icon>
+    </li>
+    <li>
       <mat-form-field>
         <mat-select placeholder="Favorite food">
           <mat-option *ngFor="let food of foods" [value]="food.value">

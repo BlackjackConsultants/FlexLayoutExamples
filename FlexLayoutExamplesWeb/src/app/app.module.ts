@@ -12,7 +12,8 @@ import { AngularMaterialComponent } from './angular-material.component';
 import { MatSelectModule } from '@angular/material';
 import { MatSliderModule } from '@angular/material';
 import { MatToolbarModule } from '@angular/material';
-import { MatButtonModule } from '@angular/material';
+import { MatButtonModule, MatIcon } from '@angular/material';
+import { MatIconModule } from '@angular/material/icon';
 import { AngularRoutingComponent } from './angular-routing.component';
 import { RouterNamedOutletComponent } from './router-named-outlet.component';
 import { MessaginServiceComponent } from './messagin-service.component';
@@ -31,7 +32,7 @@ import { MessagingService, IMessage } from './messaging.service';
   imports: [
     BrowserModule, BrowserAnimationsModule,
     AppRoutingModule, FlexLayoutModule, MatSidenavModule, MatButtonModule,
-    MatSelectModule, MatSliderModule, MatToolbarModule
+    MatSelectModule, MatSliderModule, MatToolbarModule, MatIconModule
   ],
   exports: [
     SideNavComponent
