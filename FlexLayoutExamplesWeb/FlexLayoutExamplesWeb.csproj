@@ -117,7 +117,6 @@
     <Content Include=".angular-cli.json" />
     <Content Include=".gitignore" />
     <Content Include="e2e\tsconfig.e2e.json" />
-    <Content Include="package-lock.json" />
     <Content Include=".editorconfig" />
     <Content Include="package.json" />
     <None Include="packages.config" />

@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { MatSliderModule } from '@angular/material/slider';
 
 /**
  * @title Basic select

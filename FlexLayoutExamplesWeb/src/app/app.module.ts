@@ -10,13 +10,13 @@ import { FlexLayoutColumnComponent } from './flex-layout-column.component';
 import { SideNavComponent } from './side-nav.component';
 import { AngularMaterialComponent } from './angular-material.component';
 import { MatSelectModule } from '@angular/material';
-import { MatSliderModule } from '@angular/material';
 import { MatToolbarModule } from '@angular/material';
 import { MatButtonModule } from '@angular/material';
 import { AngularRoutingComponent } from './angular-routing.component';
 import { RouterNamedOutletComponent } from './router-named-outlet.component';
 import { MessaginServiceComponent } from './messagin-service.component';
 import { MessagingService, IMessage } from './messaging.service';
+import { MatSliderModule } from '@angular/material/slider';
 
 @NgModule({
   declarations: [
