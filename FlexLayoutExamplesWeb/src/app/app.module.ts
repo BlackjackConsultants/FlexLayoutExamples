@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { AppRoutingModule } from "./app-routing.module";
 import { MatSidenavModule } from '@angular/material';
+import { MatIconModule } from '@angular/material/icon';
 
 import { AppComponent } from './app.component';
 import { FlexLayoutColumnComponent } from './flex-layout-column.component';
@@ -17,6 +18,7 @@ import { RouterNamedOutletComponent } from './router-named-outlet.component';
 import { MessaginServiceComponent } from './messagin-service.component';
 import { MessagingService, IMessage } from './messaging.service';
 import { MatSliderModule } from '@angular/material/slider';
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -31,7 +33,7 @@ import { MatSliderModule } from '@angular/material/slider';
   imports: [
     BrowserModule, BrowserAnimationsModule,
     AppRoutingModule, FlexLayoutModule, MatSidenavModule, MatButtonModule,
-    MatSelectModule, MatSliderModule, MatToolbarModule
+    MatSelectModule, MatSliderModule, MatToolbarModule, MatIconModule, HttpClientModule
   ],
   exports: [
     SideNavComponent
