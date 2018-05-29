@@ -6,11 +6,14 @@ import { AngularMaterialComponent } from './angular-material.component';
 import { AngularRoutingComponent } from './angular-routing.component';
 import { RouterNamedOutletComponent } from './router-named-outlet.component';
 import { MessaginServiceComponent } from './messagin-service.component';
+import { TypographyComponent } from './typography.component';
+
 const routes: Routes = [
   { path: 'column', component: FlexLayoutColumnComponent },
   { path: 'sidenav', component: SideNavComponent },
   { path: 'material', component: AngularMaterialComponent },
   { path: 'messaging', component: MessaginServiceComponent },
+  { path: 'typography', component: TypographyComponent },
   { path: 'routing', component: AngularRoutingComponent, children: [
     { path: 'testOutlet', component: RouterNamedOutletComponent, outlet: 'test' }
   ]}

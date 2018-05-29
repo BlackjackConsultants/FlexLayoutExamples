@@ -101,6 +101,8 @@
     <Content Include="src\app\router-named-outlet.component.html" />
     <Content Include="src\app\side-nav.component.css" />
     <Content Include="src\app\side-nav.component.html" />
+    <Content Include="src\app\typography.component.css" />
+    <Content Include="src\app\typography.component.html" />
     <Content Include="src\assets\img\examples\flashcards.svg" />
     <Content Include="src\favicon.ico" />
     <Content Include="src\index.html" />
@@ -152,6 +154,8 @@
     <TypeScriptCompile Include="src\app\messagin-service.component.ts" />
     <TypeScriptCompile Include="src\app\router-named-outlet.component.ts" />
     <TypeScriptCompile Include="src\app\side-nav.component.ts" />
+    <TypeScriptCompile Include="src\app\typography.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\typography.component.ts" />
     <TypeScriptCompile Include="src\environments\environment.prod.ts" />
     <TypeScriptCompile Include="src\environments\environment.ts" />
     <TypeScriptCompile Include="src\main.ts" />
