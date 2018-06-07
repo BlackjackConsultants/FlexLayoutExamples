@@ -97,6 +97,8 @@
     <Content Include="src\app\flex-layout-column.component.html" />
     <Content Include="src\app\messagin-service.component.css" />
     <Content Include="src\app\messagin-service.component.html" />
+    <Content Include="src\app\observable.component.css" />
+    <Content Include="src\app\observable.component.html" />
     <Content Include="src\app\router-named-outlet.component.css" />
     <Content Include="src\app\router-named-outlet.component.html" />
     <Content Include="src\app\side-nav.component.css" />
@@ -152,6 +154,8 @@
     <TypeScriptCompile Include="src\app\flex-layout-column.component.ts" />
     <TypeScriptCompile Include="src\app\messaging.service.ts" />
     <TypeScriptCompile Include="src\app\messagin-service.component.ts" />
+    <TypeScriptCompile Include="src\app\observable.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\observable.component.ts" />
     <TypeScriptCompile Include="src\app\router-named-outlet.component.ts" />
     <TypeScriptCompile Include="src\app\side-nav.component.ts" />
     <TypeScriptCompile Include="src\app\typography.component.spec.ts" />

@@ -20,6 +20,7 @@ import { MessagingService, IMessage } from './messaging.service';
 import { MatSliderModule } from '@angular/material/slider';
 import { HttpClientModule } from "@angular/common/http";
 import { TypographyComponent } from './typography.component';
+import { ObservableComponent } from './observable.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { TypographyComponent } from './typography.component';
     AngularRoutingComponent,
     RouterNamedOutletComponent,
     MessaginServiceComponent,
-    TypographyComponent
+    TypographyComponent,
+    ObservableComponent
   ],
   imports: [
     BrowserModule, BrowserAnimationsModule,
