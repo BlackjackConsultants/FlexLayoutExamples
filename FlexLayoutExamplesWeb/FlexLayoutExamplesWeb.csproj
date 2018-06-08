@@ -154,7 +154,6 @@
     <TypeScriptCompile Include="src\app\flex-layout-column.component.ts" />
     <TypeScriptCompile Include="src\app\messaging.service.ts" />
     <TypeScriptCompile Include="src\app\messagin-service.component.ts" />
-    <TypeScriptCompile Include="src\app\observable.component.spec.ts" />
     <TypeScriptCompile Include="src\app\observable.component.ts" />
     <TypeScriptCompile Include="src\app\router-named-outlet.component.ts" />
     <TypeScriptCompile Include="src\app\side-nav.component.ts" />

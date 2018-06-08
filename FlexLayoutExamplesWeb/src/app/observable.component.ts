@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs/Observable'
-import { FormControl, FormGroup, FormBuilder } from '@angular/forms';
+////import { FormControl, FormGroup, FormBuilder } from '@angular/forms';
 import 'rxjs/add/operator/map';
 
 @Component({
@@ -14,20 +14,20 @@ export class ObservableComponent implements OnInit {
   private anyErrors: boolean;
   private finished: boolean;
 
-  mathform: FormGroup;
-  inputnumber: FormControl
+  //mathform: FormGroup;
+  //inputnumber: FormControl
   squaredata: number;
   processed = false;
 
-  constructor(private fb: FormBuilder) {
-    this.inputnumber = new FormControl();
+  constructor() {
+    ////this.inputnumber = new FormControl();
 
-    this.mathform = fb.group({
-      inputnumber: this.inputnumber
-    })
+    ////this.mathform = fb.group({
+    ////  inputnumber: this.inputnumber
+    ////})
 
-    this.inputnumber.valueChanges.map(n => n * n)
-      .subscribe(power => this.squaredata = power);
+    ////this.inputnumber.valueChanges.map(n => n * n)
+    ////  .subscribe(power => this.squaredata = power);
 
   };
 
@@ -59,11 +59,7 @@ export class ObservableComponent implements OnInit {
       }
       );
 
-    let subscription = this.data.
-      subscribe(
-      fruit => this.fruits.push(fruit),
-      error => this.anyErrors = true,
-      () => this.finished = true
+    let subscription = this.data.subscribe(fruit => this.fruits.push(fruit), error => this.anyErrors = true, () => this.finished = true
       );
 
     this.processed = true;
