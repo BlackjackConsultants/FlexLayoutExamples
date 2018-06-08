@@ -12,13 +12,10 @@
 <div style="border: 3px;padding-left:0px"> <b> completion status : </b> {{ finished==true ? 'Observer completed ': '' }}</div>
 <hr>
 <button style="margin-top: 2rem;" (click)="start()">Start Emitting</button>
+<button style="margin-top: 2rem;" (click)="startWithService()">Start Emitting using service</button>
 <hr>
 <h1>
-  <!--<form [formGroup]="mathform">-->
-
-    <input formControlName="inputnumber">
-
-  <!--</form>-->
+  <input formControlName="inputnumber">
   <hr>
   <div>
     Square of the number is :: <b>{{squaredata}}</b>

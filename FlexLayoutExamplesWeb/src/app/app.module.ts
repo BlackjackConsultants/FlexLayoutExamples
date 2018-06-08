@@ -21,6 +21,7 @@ import { MatSliderModule } from '@angular/material/slider';
 import { HttpClientModule } from "@angular/common/http";
 import { TypographyComponent } from './typography.component';
 import { ObservableComponent } from './observable.component';
+import { ContactService } from './contact.service';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,7 @@ import { ObservableComponent } from './observable.component';
   exports: [
     SideNavComponent
   ],
-  providers: [MessagingService],
+  providers: [MessagingService, ContactService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
