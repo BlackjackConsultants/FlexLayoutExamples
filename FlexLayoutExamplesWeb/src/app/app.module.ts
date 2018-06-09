@@ -22,6 +22,7 @@ import { HttpClientModule } from "@angular/common/http";
 import { TypographyComponent } from './typography.component';
 import { ObservableComponent } from './observable.component';
 import { ContactService } from './contact.service';
+import { TypescriptComponent } from './typescript.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { ContactService } from './contact.service';
     RouterNamedOutletComponent,
     MessaginServiceComponent,
     TypographyComponent,
-    ObservableComponent
+    ObservableComponent,
+    TypescriptComponent
   ],
   imports: [
     BrowserModule, BrowserAnimationsModule,

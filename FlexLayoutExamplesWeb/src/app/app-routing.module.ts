@@ -8,6 +8,7 @@ import { RouterNamedOutletComponent } from './router-named-outlet.component';
 import { MessaginServiceComponent } from './messagin-service.component';
 import { TypographyComponent } from './typography.component';
 import { ObservableComponent } from './observable.component';
+import { TypescriptComponent } from './typescript.component';
 
 const routes: Routes = [
   { path: 'column', component: FlexLayoutColumnComponent },
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'material', component: AngularMaterialComponent },
   { path: 'messaging', component: MessaginServiceComponent },
   { path: 'typography', component: TypographyComponent },
+  { path: 'typescript', component: TypescriptComponent },
   { path: 'observable', component: ObservableComponent },
   { path: 'routing', component: AngularRoutingComponent, children: [
     { path: 'testOutlet', component: RouterNamedOutletComponent, outlet: 'test' }
