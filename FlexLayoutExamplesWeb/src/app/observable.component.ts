@@ -10,7 +10,7 @@ import { Contact } from '../../Models/contact';
   templateUrl: './observable.component.html',
   styleUrls: ['./observable.component.css']
 })
-export class ObservableComponent implements OnInit {
+export class ObservableComponent {
   private contacts: Contact[] = [];
   private data: Observable<string>;
   private fruits: Array<string> = [];
@@ -20,14 +20,9 @@ export class ObservableComponent implements OnInit {
   squaredata: number;
   processed = false;
 
-  constructor(private contactService: ContactService) {
-  };
-
-  ngOnInit() {
-  }
+  constructor(private contactService: ContactService) {};
 
   startWithService() {
-
     this.contactService.getContacts().subscribe(contacts => {
       this.contacts = contacts;
       let count = contacts.length;

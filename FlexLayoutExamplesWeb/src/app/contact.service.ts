@@ -12,7 +12,6 @@ export class ContactService {
   constructor() { }
 
   getContacts() {
-
     this.contactsObs = new Observable(observer => {
       setTimeout(() => {
         this.contacts = [
