@@ -11,6 +11,7 @@ import { ObservableComponent } from './observable.component';
 import { TypescriptComponent } from './typescript.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: '/material', pathMatch: 'full' },
   { path: 'column', component: FlexLayoutColumnComponent },
   { path: 'sidenav', component: SideNavComponent },
   { path: 'material', component: AngularMaterialComponent },

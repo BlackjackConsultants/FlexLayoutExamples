@@ -3,7 +3,7 @@ import { Observable } from 'rxjs/Observable'
 ////import { FormControl, FormGroup, FormBuilder } from '@angular/forms';
 import 'rxjs/add/operator/map';
 import { ContactService } from './contact.service';
-import { Contact } from '../../Models/contact';
+import { Contact } from './Models/contact';
 
 @Component({
   selector: 'app-observable-demo',
