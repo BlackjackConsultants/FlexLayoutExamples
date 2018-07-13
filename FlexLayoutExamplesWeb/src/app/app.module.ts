@@ -23,6 +23,7 @@ import { TypographyComponent } from './typography.component';
 import { ObservableComponent } from './observable.component';
 import { ContactService } from './contact.service';
 import { TypescriptComponent } from './typescript.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,7 @@ import { TypescriptComponent } from './typescript.component';
   imports: [
     BrowserModule, BrowserAnimationsModule,
     AppRoutingModule, FlexLayoutModule, MatSidenavModule, MatButtonModule,
-    MatSelectModule, MatSliderModule, MatToolbarModule, MatIconModule, HttpClientModule
+    MatSelectModule, MatSliderModule, MatToolbarModule, MatIconModule, HttpClientModule, FormsModule, ReactiveFormsModule
   ],
   exports: [
     SideNavComponent

@@ -2,6 +2,7 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatIconRegistry } from '@angular/material';
 import { DomSanitizer } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 /**
  * @title Basic select
@@ -18,6 +19,8 @@ import { DomSanitizer } from '@angular/platform-browser';
     { value: 'pizza-1', viewValue: 'Pizza' },
     { value: 'tacos-2', viewValue: 'Tacos' }
   ];
+
+  public name222: string;
   ngOnInit() {
     var atest = this.foods;
     console.debug(atest.length);

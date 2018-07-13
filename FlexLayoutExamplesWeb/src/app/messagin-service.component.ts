@@ -9,6 +9,19 @@ export class UserUpdatedMessage implements IMessage {
   data: any;
 }
 
+
+/*
+
+IMPORTANT!!!!!!!
+
+DO NOT USE THIS SERVICE. IT WORKS FINE HERE, BUT WHEN BUILT TO PROUCTION IT BREAPS BECAUSE THE MINIFICATION DOES NOT KNOW WHAT TO DO WITH TEH TYPE UserUpdatedMessage.  See javascript.doc , the common
+project has it implemented
+
+*/
+
+
+
+
 @Component({
   selector: 'app-messagin-service',
   templateUrl: './messagin-service.component.html',
