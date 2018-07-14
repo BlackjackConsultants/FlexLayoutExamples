@@ -4,6 +4,8 @@ import { MatIconRegistry } from '@angular/material';
 import { DomSanitizer } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
+interface contact { name: string;}
+
 /**
  * @title Basic select
  */
@@ -20,7 +22,7 @@ import { FormsModule } from '@angular/forms';
     { value: 'tacos-2', viewValue: 'Tacos' }
   ];
 
-  public name222: string;
+  public person: contact;
   ngOnInit() {
     var atest = this.foods;
     console.debug(atest.length);
@@ -29,6 +31,12 @@ import { FormsModule } from '@angular/forms';
   constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
     iconRegistry.addSvgIcon('thumbs-up',
       sanitizer.bypassSecurityTrustResourceUrl('assets/img/examples/flashcards.svg'));
+  }
+
+  onclick() {
+    this.person = {
+      name: 'Felipe'
+    }
   }
 
 }

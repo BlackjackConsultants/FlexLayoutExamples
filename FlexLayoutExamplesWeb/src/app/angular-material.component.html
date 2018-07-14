@@ -26,7 +26,8 @@
       <mat-icon class="large-icon" svgIcon="thumbs-up"></mat-icon>
     </li>
     <li>
-      <input matInput [(ngModel)]="name222" placeholder="MSRP" value="" name="msrp">
+      <input matInput [ngModel]="person?.name" placeholder="MSRP" value="" name="msrp">
+      <button (click)="onclick()">add person name</button>
     </li>
   </ul>
 
