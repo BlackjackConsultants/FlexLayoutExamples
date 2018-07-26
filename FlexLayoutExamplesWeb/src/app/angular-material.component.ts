@@ -22,6 +22,22 @@ interface contact { name: string;}
     { value: 'tacos-2', viewValue: 'Tacos' }
   ];
 
+  filterOptions: {
+    value: string,
+    selected: boolean
+  }[] = [{
+    value: 'filter1',
+    selected: false
+  }, {
+    value: 'filter2',
+    selected: false
+  }, {
+    value: 'filter3',
+    selected: false
+  },
+  ];
+
+
   public person: contact;
   ngOnInit() {
     var atest = this.foods;

@@ -10,9 +10,8 @@ import { AppComponent } from './app.component';
 import { FlexLayoutColumnComponent } from './flex-layout-column.component';
 import { SideNavComponent } from './side-nav.component';
 import { AngularMaterialComponent } from './angular-material.component';
-import { MatSelectModule } from '@angular/material';
 import { MatToolbarModule } from '@angular/material';
-import { MatButtonModule } from '@angular/material';
+import { MatButtonModule, MatRadioModule, MatSelectModule } from '@angular/material';
 import { AngularRoutingComponent } from './angular-routing.component';
 import { RouterNamedOutletComponent } from './router-named-outlet.component';
 import { MessaginServiceComponent } from './messagin-service.component';
@@ -24,6 +23,8 @@ import { ObservableComponent } from './observable.component';
 import { ContactService } from './contact.service';
 import { TypescriptComponent } from './typescript.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { DynamicTemplateComponent } from './dynamic-template.component';
+
 
 @NgModule({
   declarations: [
@@ -36,12 +37,13 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MessaginServiceComponent,
     TypographyComponent,
     ObservableComponent,
-    TypescriptComponent
+    TypescriptComponent,
+    DynamicTemplateComponent
   ],
   imports: [
     BrowserModule, BrowserAnimationsModule,
     AppRoutingModule, FlexLayoutModule, MatSidenavModule, MatButtonModule,
-    MatSelectModule, MatSliderModule, MatToolbarModule, MatIconModule, HttpClientModule, FormsModule, ReactiveFormsModule
+    MatSelectModule, MatSliderModule, MatToolbarModule, MatIconModule, HttpClientModule, FormsModule, ReactiveFormsModule, MatRadioModule
   ],
   exports: [
     SideNavComponent
