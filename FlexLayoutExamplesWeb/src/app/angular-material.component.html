@@ -30,25 +30,8 @@
       <button (click)="onclick()">add person name</button>
     </li>
     <li>
-      <mat-select placeholder="Return Records In" [(value)]='returnRecordsIn'>
-        <mat-option *ngFor="let option of searchOptions" [value]='option'>
-          {{ option }}
-        </mat-option>
-      </mat-select>
-      <mat-selection-list #list [(ngModel)]="selectedOptions">
-        <mat-list-option *ngFor="let filter of filterOptions"
-                         [value]="filter.value"
-                         [selected]='filter.selected'>
-          <span *ngIf='filter.value === "filter1"'>
-            Maximum number of records to return
-          </span>
-          <span *ngIf='filter.value === "filter2" && ((returnRecordsIn === "Dogs") || (returnRecordsIn === "Cats"))'>
-            {{returnRecordsIn === 'Dogs' ? 'Minimum' : 'Maximum'}} number of breeds
-          </span>
-          <span *ngIf='filter.value === "filter3"'>
-            Return random selection of {{returnRecordsIn}}
-          </span>
-        </mat-list-option>
+      <mat-selection-list>
+
       </mat-selection-list>
 
     </li>

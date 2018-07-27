@@ -46,7 +46,7 @@ import { DynamicTemplateComponent } from './dynamic-template.component';
     MatSelectModule, MatSliderModule, MatToolbarModule, MatIconModule, HttpClientModule, FormsModule, ReactiveFormsModule, MatRadioModule
   ],
   exports: [
-    SideNavComponent
+    SideNavComponent, MatSelectModule, MatRadioModule
   ],
   providers: [MessagingService, ContactService],
   bootstrap: [AppComponent]
