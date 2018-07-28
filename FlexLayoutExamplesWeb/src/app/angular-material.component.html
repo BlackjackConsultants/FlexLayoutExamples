@@ -30,8 +30,19 @@
       <button (click)="onclick()">add person name</button>
     </li>
     <li>
-      <mat-selection-list>
-
+      <mat-selection-list #action>
+        <mat-list-option>
+          Add questions to new test
+        </mat-list-option>
+        <mat-list-option>
+          Add questions to existing test
+        </mat-list-option>
+        <mat-list-option>
+          Edit existing questions
+        </mat-list-option>
+        <mat-list-option>
+          Edit existing test
+        </mat-list-option>
       </mat-selection-list>
 
     </li>

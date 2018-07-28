@@ -11,7 +11,6 @@ import { FlexLayoutColumnComponent } from './flex-layout-column.component';
 import { SideNavComponent } from './side-nav.component';
 import { AngularMaterialComponent } from './angular-material.component';
 import { MatToolbarModule } from '@angular/material';
-import { MatButtonModule, MatRadioModule, MatSelectModule } from '@angular/material';
 import { AngularRoutingComponent } from './angular-routing.component';
 import { RouterNamedOutletComponent } from './router-named-outlet.component';
 import { MessaginServiceComponent } from './messagin-service.component';
@@ -24,6 +23,10 @@ import { ContactService } from './contact.service';
 import { TypescriptComponent } from './typescript.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DynamicTemplateComponent } from './dynamic-template.component';
+import { MatStepperModule } from '@angular/material/stepper';
+import { MatListModule } from '@angular/material/list';
+import { MatButtonModule, MatRadioModule, MatSelectModule } from '@angular/material';
+import { MatInputModule } from '@angular/material/input';
 
 
 @NgModule({
